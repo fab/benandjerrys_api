@@ -2,6 +2,7 @@ BenandjerrysApi::Application.routes.draw do
   scope "/api" do
     scope "/v1" do
       resources :stores, only: [:index, :show]
+      resources :flavors, only: [:index, :show]
     end
   end
 
