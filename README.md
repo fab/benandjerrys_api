@@ -27,7 +27,7 @@ Send a GET request to ```/api/v1/stores``` to get a collection of all stores ren
 
 #### Individual stores
 
-Send a GET request to ```/api/v1/stores/:store_id``` to get an individual store including flavors sold rendered in JSON:
+Send a GET request to ```/api/v1/stores/:store_id``` to get an individual store, including flavors sold, rendered in JSON:
 ```
 {
   "id": 34,
@@ -50,4 +50,41 @@ Send a GET request to ```/api/v1/stores/:store_id``` to get an individual store 
   ]
 }
 ```
+
+### Flavors
+
+#### All flavors
+
+Send a GET request to ```/api/v1/flavors``` to get a collection of all flavors rendered in JSON:
+
+```
+[
+  {
+    "id": 1,
+    "name": "Liz Lemon"
+  },
+  {
+    "id": 2,
+    "name": "Coffee"
+  },
+  {
+    "id": 3,
+    "name": "Coffee BuzzBuzzBuzz!"
+  },
+  ...
+]
+```
+
+#### Individual flavors
+
+Send a GET request to ```/api/v1/flavors/:flavor_id``` to get an individual flavor, including the image url, rendered in JSON:
+
+```
+{
+  "id": 28,
+  "name": "Phish Food®",
+  "img_url": "https://www.filepicker.io/api/file/LkkuWrAQVKmwhfQpskie"
+}
+```
+
 
