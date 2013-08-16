@@ -2,11 +2,11 @@ Ben & Jerry's API
 =================
 A JSON API for finding which stores sell Ben &amp; Jerry's ice cream and what flavors they stock.
 
-# Using the API
+## Using the API
 
-## Stores
+### Stores
 
-### All stores
+#### All stores
 
 Send a GET request to ```/api/v1/stores``` to get a collection of all stores rendered in JSON:
 ```
@@ -25,7 +25,7 @@ Send a GET request to ```/api/v1/stores``` to get a collection of all stores ren
 ]
 ```
 
-### Individual stores
+#### Individual stores
 
 Send a GET request to ```/api/v1/stores/:store_id``` to get an individual store including flavors sold rendered in JSON:
 ```
