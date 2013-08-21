@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20130813002656) do
 
   create_table "flavors", force: true do |t|
     t.string   "name"
+    t.string   "description"
+    t.text     "ingredients"
     t.string   "img_url"
     t.datetime "created_at"
     t.datetime "updated_at"
