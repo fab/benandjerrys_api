@@ -3,7 +3,7 @@ class CreateFlavors < ActiveRecord::Migration
     create_table :flavors do |t|
       t.string :name
       t.string :description
-      t.string :ingredients
+      t.text :ingredients
       t.string :img_url
 
       t.timestamps
