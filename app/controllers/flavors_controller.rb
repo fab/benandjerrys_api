@@ -8,6 +8,6 @@ class FlavorsController < ApplicationController
   def show
     @flavor = Flavor.find(params[:id])
 
-    render json: @flavor.to_json(only: [:id, :name, :img_url])
+    render json: @flavor.to_json(only: [:id, :name, :description, :ingredients, :img_url])
   end
 end
