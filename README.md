@@ -83,13 +83,13 @@ Send a GET request to ```/api/v1/flavors/:flavor_id``` to get an individual flav
 
 ```
 {
-  "id": 28,
+  "id": 30,
   "name": "Phish Food®",
   "description": "Chocolate Ice Cream with Gooey Marshmallow Swirls, Caramel Swirls & Fudge Fish",
   "ingredients": "Cream, Water, Skim Milk, Liquid Sugar (Sugar, Water), Corn Syrup, Sugar, Cocoa (Processed With
   Alkali), Coconut Oil, Butter (Cream, Salt), Egg Whites, Egg Yolks, Vanilla Extract, Corn Syrup Solids, Guar
   Gum, Cocoa, Milk Fat, Salt, Natural Flavor, Pectin, Carrageenan, Sodium Bicarbonate, Soy Lecithin."
-  "img_url": "https://www.filepicker.io/api/file/LkkuWrAQVKmwhfQpskie"
+  "img_url": "http://www.benjerry.com/templates/global-mobile-templates/assets/images/flavors/us/detail/7684010098.png"
 }
 ```
 
