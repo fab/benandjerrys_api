@@ -10,3 +10,15 @@ task :parse => :environment do
     end
   end
 end
+
+desc "Separate address field of stores into street, city, state and zipcode"
+task :expand_addresses => :environment do
+  Store.all.each do |store|
+    address = store.street
+    zipcode = address[-5..-1]
+    state = address[-8..-7]
+    city = address.split(',')[-2].strip
+    street = address.split(',')[0..-3].join(',')
+    store.update_attributes({street: street, city: city, state: state, zipcode: zipcode})
+  end
+end
