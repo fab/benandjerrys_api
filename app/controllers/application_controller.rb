@@ -4,4 +4,9 @@ class ApplicationController < ActionController::API
       root: false
     }
   end
+
+  #Handle RecordNotFound errors
+  rescue_from ActiveRecord::RecordNotFound do |exception|
+    render json: {errors: [exception.message]}, status: :unprocessable_entity
+  end
 end
