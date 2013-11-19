@@ -11,7 +11,8 @@ This API was built using the data collected with the [Ben & Jerry's scraper](htt
 #### All stores
 
 Send a GET request to ```/api/v1/stores``` to get a collection of all stores rendered in JSON:
-```
+
+```javascript
 [
   {
     "id": 1,
@@ -30,7 +31,8 @@ Send a GET request to ```/api/v1/stores``` to get a collection of all stores ren
 #### Individual stores
 
 Send a GET request to ```/api/v1/stores/:store_id``` to get an individual store, including flavors sold, rendered in JSON:
-```
+
+```javascript
 {
   "id": 34,
   "name": "WALGREENS",
@@ -59,7 +61,7 @@ Send a GET request to ```/api/v1/stores/:store_id``` to get an individual store,
 
 Send a GET request to ```/api/v1/flavors``` to get a collection of all flavors rendered in JSON:
 
-```
+```javascript
 [
   {
     "id": 1,
@@ -81,7 +83,7 @@ Send a GET request to ```/api/v1/flavors``` to get a collection of all flavors r
 
 Send a GET request to ```/api/v1/flavors/:flavor_id``` to get an individual flavor, including the description, ingredients and image url, rendered in JSON:
 
-```
+```javascript
 {
   "id": 30,
   "name": "Phish Food®",
