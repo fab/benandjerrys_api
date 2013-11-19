@@ -2,12 +2,12 @@ class FlavorsController < ApplicationController
   def index
     @flavors = Flavor.all
 
-    render json: @flavors.to_json(only: [:id, :name])
+    render json: @flavors, each_serializer: CompactFlavorSerializer
   end
 
   def show
     @flavor = Flavor.find(params[:id])
 
-    render json: @flavor.to_json(only: [:id, :name, :description, :ingredients, :img_url])
+    render json: @flavor
   end
 end

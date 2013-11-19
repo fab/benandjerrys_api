@@ -2,14 +2,12 @@ class StoresController < ApplicationController
   def index
     @stores = Store.all
 
-    render json: @stores.to_json(only: [:id, :name], methods: :address)
+    render json: @stores, each_serializer: CompactStoreSerializer
   end
 
   def show
     @store = Store.find(params[:id])
 
-    render json: @store.to_json(only: [:id, :name],
-                                methods: :address,
-                                include: {flavors: {only: [:id, :name]}})
+    render json: @store
   end
 end
