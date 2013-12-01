@@ -7,6 +7,8 @@ class StoresController < ApplicationController
                    .includes(:flavors)
                    .where('flavors.name like ?', "%#{params[:flavor]}%")
 
+    render json: { count: @stores.count } and return if params[:count]
+
     render json: @stores, each_serializer: CompactStoreSerializer
   end
 
