@@ -5,7 +5,7 @@ class StoresController < ApplicationController
                    .where('stores.state like ?', "%#{params[:state].try(:upcase)}%")
                    .where('stores.zipcode like ?', "%#{params[:zipcode]}%")
                    .includes(:flavors)
-                   .where('flavors.name like ?', "%#{params[:flavor]}%")
+                   .where('flavors.name like ?', "%#{params[:flavor].try(:upcase)}%")
 
     render json: { count: @stores.count } and return if params[:count]
 
