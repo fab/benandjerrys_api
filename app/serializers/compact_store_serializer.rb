@@ -1,7 +1,3 @@
-class CompactStoreSerializer < ActiveModel::Serializer
+class CompactStoreSerializer < ApplicationSerializer
   attributes :id, :name, :address
-
-  def name
-    object.name.titleize
-  end
 end

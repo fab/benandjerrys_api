@@ -1,7 +1,3 @@
-class CompactFlavorSerializer < ActiveModel::Serializer
+class CompactFlavorSerializer < ApplicationSerializer
   attributes :id, :name
-
-  def name
-    object.name.titleize
-  end
 end
