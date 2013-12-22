@@ -1,6 +1,6 @@
 class FlavorsController < ApplicationController
   def index
-    @flavors = Flavor.all
+    @flavors = Flavor.all.order(:name)
 
     render json: @flavors, each_serializer: CompactFlavorSerializer
   end
