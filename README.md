@@ -2,7 +2,7 @@ Ben & Jerry's API
 =================
 A JSON API for finding which stores sell [Ben &amp; Jerry's ice cream](http://www.benjerry.com) and what flavors they stock.
 
-This API was built using the data collected with the [Ben & Jerry's scraper](https://github.com/fab/benandjerrys_scraper).
+This API was built using the data collected with the [Ben & Jerry's scraper](https://github.com/fab/benandjerrys_iron_scraper).
 
 ## Using the API
 
