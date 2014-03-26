@@ -17,4 +17,10 @@ class StoresController < ApplicationController
 
     render json: @store
   end
+
+  def count_by_state
+    @result = Store.order(:state).group(:state).count
+
+    render json: @result
+  end
 end

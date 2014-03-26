@@ -1,7 +1,9 @@
 BenandjerrysApi::Application.routes.draw do
   scope "/api" do
     scope "/v1" do
-      resources :stores, only: [:index, :show]
+      resources :stores, only: [:index, :show] do
+        get 'count_by_state', on: :collection
+      end
       resources :flavors, only: [:index, :show]
     end
   end
